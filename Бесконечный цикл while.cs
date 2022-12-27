@@ -9,6 +9,6 @@ while (true) {
     if (radCircle == "Stop" || radCircle == "s") break;
     if (double.TryParse(radCircle, out num)) {
         square = pi*num*num;
-        Console.WriteLine("Площадь равна = " + string.Format("{0:0.000}", square));
+        Console.WriteLine("Площадь равна = " + string.Format("{0:0.000}", square)); // ограничение вывода количства символов после запятой
     }
 }
