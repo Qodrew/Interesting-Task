@@ -15,5 +15,5 @@ do {
         }
     }
 }
-while (num1 != 30);
+while (num1 < 31);
 Console.ReadKey();
