@@ -1,0 +1,25 @@
+  int n1 = int.Parse(Console.ReadLine());
+  int n2 = int.Parse(Console.ReadLine());
+  int sum = 0;
+        
+  for (int i = n1; i < n2; i++)
+    {
+        int Boo = 0;
+        if (i > 1)
+        {
+            for (int j = 2; j < i; j++)
+            {
+                if (i % j == 0)
+                {
+                    Boo = 1;
+                    break;
+                }
+            }
+            if (Boo == 0)
+            {
+                sum += i;
+            }
+        }
+    }
+
+        Console.WriteLine($"Сумма простых чисел = {sum}");
