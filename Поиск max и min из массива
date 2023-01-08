@@ -1,0 +1,17 @@
+ string line = Console.ReadLine();
+        string[] array = line.Split(' ');
+        int[] numbers = new int [array.Length];
+        int minX = int.MaxValue;
+        int maxX = int.MinValue;
+        for (int i = 0; i < array.Length; i++) {
+            numbers[i] = int.Parse(array[i]);
+            if (minX > numbers[i]) {
+                minX = numbers[i];
+            }
+            if (maxX < numbers[i]) {
+                maxX = numbers[i];
+            }
+        }
+
+        Console.WriteLine($"Наименьшее значение = {minX}");
+        Console.WriteLine($"Наибольшее значение = {maxX}");  
