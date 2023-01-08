@@ -1,0 +1,14 @@
+string num1 = Console.ReadLine();
+        string num2 = Console.ReadLine();
+
+        string num = num1 + num2; 
+        char[] arr = num.ToCharArray(); 
+        int count,i;
+            for (i = 0; i < arr.Length; i++){ 
+                count = 0;
+                for (int j = i; j < arr.Length; j++)
+                    if (arr[i] == arr[j])
+                        count++;
+                if (count == 1) break;
+            }
+            Console.WriteLine($"Уникально число {arr[i]}");
