@@ -1,0 +1,17 @@
+var numbers = Console.ReadLine().Split(' ').Select(token => int.Parse(token));
+int[] arr = numbers.ToArray();
+
+string mass = "";
+int count = 0;
+string cN = "";
+foreach (int x in arr)
+{
+    mass += x.ToString() + " ";
+    if (x % 2 == 0) {
+        count++; 
+        cN += x.ToString() + " ";
+    }
+}
+System.Console.WriteLine(mass);
+System.Console.WriteLine(cN);
+System.Console.WriteLine($"Количество четных чисел = {count}");
